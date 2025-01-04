@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="butts">
+            <img src="./svgs/logo.svg" alt="" style="color: white;">
+            <p id="home"><img src="./svgs/home.svg" alt=""> Home </p>
+            <p id="search"><img src="./svgs/search.svg" alt=""> Search</p>
+        </div>
+        <div class="library">
+            <div class="main"><p id="library"><img src="./svgs/library.svg" alt="">Your Library</p>
+                <div class="songs"><p id="music"><img src="./svgs/musicHeader.svg" alt="">Music</p>
+                    <ol id="list">
+                    </ol>
+                </div>
+            </div>
+            <div class="sosed">
+                <div class="footer">
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a href="https://www.spotify.com/in-en/legal/" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">Legal</span></a></div>
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a
+                            href="https://www.spotify.com/in-en/safetyandprivacy/" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">Privacy Center</span></a>
+                    </div>
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">Privacy Policy</span></a></div>
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a
+                            href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">Cookies</span></a></div>
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">About Ads</span></a></div>
+                    <div class="Link__Container-sc-c30omp-1 hzoAVA"><a
+                            href="https://www.spotify.com/in-en/accessibility/" id=""
+                            class="Link-sc-k8gsk-0 eBaZxL Link__BottomLink-sc-c30omp-0 kmeDa"
+                            data-encore-id="textLink"><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gWTpLn">Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <!-- <div class="header">
+        </div> -->
+        <div class="menu">
+            <div class="nav">
+                <div class="arrows"> 
+                    <img src="./svgs/arrowLeft.svg" alt="" id="arrow"> <img src="./svgs/arrowRight.svg" alt="" id="arrow">
+                </div>
+                <div class="sign">
+                    <button id="sign">Sign Up</button>
+                    <button id="sign">Log In</button>
+                </div>
+            </div>
+            <div class="sosed">
+                <h1>Spotify Playlists</h1>
+                <div class="playlists">
+                    <div class="playlist" id="playlist">
+                        <button class="play-button" id="play-button">
+                            <span class="play-icon"></span>
+                        </button>
+                        <img id="dp" src="https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="">
+                        <div class="text">
+                            <a href="">Party Hits</a>
+                            <p id="desc">A mix of the biggest pop, dance, and hip hop party songs. Cover: Charli xcx</p>
+                        </div>
+                    </div>
+<!--                     
+                    <div class="playlist" id="playlist">
+                        <button class="play-button" id="play-button">
+                            <span class="play-icon"></span>
+                        </button>
+                        <img id="dp" src="https://media.discordapp.net/attachments/826008182027059220/1270806936836898979/nigabilla.png?ex=66b50ab0&is=66b3b930&hm=8b122fcefdd12a363eb8e4345f2560f77e8ce07032888bebee1eee7c972dc720&=&format=webp&quality=lossless&width=443&height=437" alt="">
+                        <div class="text">
+                            <a href="">Emo Hours</a>
+                            <p id="desc">A mix of the biggest sad songs to bawl your eyes out!</p>
+                        </div>
+                    </div>
+
+                    <div class="playlist" id="playlist">
+                        <button class="play-button" id="play-button">
+                            <span class="play-icon"></span>
+                        </button>
+                        <img id="dp" src="https://media.discordapp.net/attachments/826008182027059220/1270807730986287134/54b95b0959f5194a9966db757d12b6de.jpg?ex=66b50b6d&is=66b3b9ed&hm=4debf7513297936651f26a2196892f693d6d913b023c848f975f1b06d2e23921&=&format=webp&width=570&height=570" alt="">
+                        <div class="text">
+                            <a href="">Femboy Wonder</a>
+                            <p id="desc">For those femboy fridays...</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div> 
+            <div class="play">
+                <div class="sasa">
+                    <div class="details"></div>
+                    <div class="playback">
+                        <img src="./svgs/forwardLeft.svg" alt="" id="forward" class="forwardLeft">
+                        <img src="./svgs/playbutton.svg" alt="sed" id="playing">
+                        <img src="./svgs/forwardRight.svg" alt="" id="forward" class="forwardRight">
+                    </div>
+                    <div class="duration">0:00/0:00</div>
+                </div>
+                <div class="playing">
+                    <!-- <div class="entire"> -->
+                        <div class="dir"></div>
+                        <div class="playbar"></div>
+                    <!-- </div> -->
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

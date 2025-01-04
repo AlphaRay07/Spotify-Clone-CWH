@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+    /* max-height: 100vh; */
+}
+
+.left{
+    width: 25vw;
+    /* margin: 10px 7px;  */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.butts, .library, .right{
+    background-color: rgb(27, 25, 25);
+    border-radius: 6px;
+}
+
+.library{
+    min-height: 75vh;
+}
+
+.left p{
+    padding: 12px 20px; 
+    margin: 0;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.left p img{
+    width:24px;
+}
+
+img[src="./svgs/logo.svg"]{
+    height: 24px;
+    margin: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.left img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(169deg) brightness(103%) contrast(105%);
+}
+
+.right{
+    width: 85%;
+    /* height: 97.5vh; */
+    background-color: rgb(30, 28, 28);
+    /* margin: 10px 7px 10px 2px;  */
+    position: relative;
+}
+
+.playlists{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 75vh;
+    overflow: auto;
+    padding: 10px 15px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto 20px;
+}
+
+.footer a:clicked{
+    color: rgb(90, 88, 88);
+    text-decoration: underline;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: rgb(90, 88, 88);
+    font-size: 0.76rem;
+    font-weight: 580;
+}
+
+.main{
+    min-height: 65vh;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.main ol{
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto; 
+    list-style: none;
+}
+
+.main li{
+    width: 300px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #2e2929;
+    padding: 5px 9px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.song{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.artist{
+    display: block;
+    font-size: 0.7rem;
+    color: rgb(181, 171, 171);
+    padding: 2px 0;
+}
+
+.main li:hover{
+    background-color: #5a5050;
+
+}
+
+.sosed{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav {
+    padding: 0 5px;
+    margin: 0;
+    height: 60px;
+    background-color: #1b1616;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sign{
+    position: absolute;
+    right:0;
+}
+
+#sign{
+    background-color: white;
+    padding: 13px 18px;
+    border-radius: 34px;
+    font-weight: 600;
+}
+
+h1{
+    padding: 10px 5px;
+    font-size: 1.7rem;
+    font-weight: 650;
+}
+
+.playlist img{
+    width: 150px;
+}
+.playlist {
+    width: 170px;
+    padding: 10px 0;
+    /* height: 224px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    transition: background-color 0.15s;
+    cursor: pointer;
+    position: relative;
+}
+
+.playlist a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+#dp{
+    border-radius: 5px;
+}
+
+#desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.8rem;
+    width: 150px;
+    text-wrap: nowrap;
+    color: rgb(148, 144, 144);
+}
+
+.playlist:hover{
+    background-color: rgba(240, 255, 255, 0.06);
+}
+
+#arrow{
+    background-color: rgba(0, 0, 0, 0.044);
+    width:20px;
+    padding: 5px;
+    border-radius: 60%;
+    filter: invert(0.6);
+    cursor: pointer;
+}
+
+/* Reset default button styles */
+button {
+border: none;
+background: none;
+padding: 0;
+cursor: pointer;
+}
+
+.play-button {
+width: 40px;
+height: 40px;
+background-color: #1DB954;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+opacity: 0;
+transition: transform 0.2s ease-in-out, background-color 0.5s, opacity 0.2s ease-out, top 0.2s ease-out;
+position: absolute;
+top: 125px;
+left: 116px;
+}
+
+.in {
+top: 115px;
+opacity: 1;
+}
+
+.play-button:hover{
+    background-color: #3ac96c;
+    transform: scale(1.1);
+}
+
+.play-icon {
+width: 0;
+height: 0;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-left: 15px solid black;
+display: inline-block;
+/* transition: transform 0.2s ease-in-out, ; */
+}
+
+/* .play-button:hover .play-icon {
+transform: scale(1.2);
+} */
+
+.header{
+    height: 10px;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(26, 26, 26);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(139, 137, 137, 0.451);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(180, 172, 172, 0.451);
+}
+
+.play{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    bottom: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.forwardLeft{
+    transform: scale(-1);
+}
+
+.play img{
+    width: 30px;
+}
+
+.playback{
+    display: flex;
+    gap: 35px;
+}
+
+
+#playing, #forward{
+    filter: invert(1);
+}
+
+#music{
+    font-size: 1.3rem;
+}
+
+.playbar{
+    background-color: azure;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dir{
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    transition: left 0s;
+    left: 0px;
+}
+
+.stuffs{
+    width:100%;
+    display: flex;
+}
+
+
+
+.playing{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.sasa{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    width: 90%;
+}
