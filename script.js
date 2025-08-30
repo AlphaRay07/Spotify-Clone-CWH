@@ -56,9 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < ancs.length; i++) {
             let element = ancs[i];
             if (element.href.endsWith(".mp3")) {
-                // s= element.href.replaceAll("http://127.0.0.1:5500/songs/", " ")
-                // x= s.replaceAll("%20", " ")
-                // console.log(x)
+
                 song.push(element.href);
             }
         }
@@ -105,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
             paused= false;
             pauseplay()
             playpause.src= "./svgs/pausebutton.svg"
-            console.log('sosedks')
         }
     })
     
@@ -168,5 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
 });    
+
 
 
